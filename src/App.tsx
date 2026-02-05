@@ -175,7 +175,9 @@ const App = () => {
                   size="large"
                   icon={<CreditCardOutlined className="text-green-900!" />}
                   onClick={() => {
-                    navigator.clipboard.writeText("0942049873\nพร้อมเพ or วอเลท\nวัชรพล เชื้อวงษ์");
+                    navigator.clipboard.writeText(
+                      `0942049873\nพร้อมเพ or วอเลท\nวัชรพล เชื้อวงษ์\n\nตอนโอนบันทึกช่วยจำให้ผมหน่อยนะครับว่า\n'ซื้อไอดี efootball กับร้าน SparkBi'\n\nถ้าไม่ได้ใส่มาขอให้โอนมาใหม่ 0.01 บาทพร้อมบันทคึดช่วยจำครับ`,
+                    );
                     message.success("คัดลอกเลขบัญชีแล้ว");
                   }}
                 >
