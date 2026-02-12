@@ -79,7 +79,8 @@ export const ItemTable = ({ items, onItemsChange, editingId, setEditingId, avail
           }
         } else {
           // Update existing item
-          const success = await updateItem(editingId, editData);
+          const { id:_, ...editDataWithOurId } = editData;
+          const success = await updateItem(editingId, editDataWithOurId);
           if (success) {
             message.success("แก้ไขรายการสำเร็จ");
             setEditingId(null);
