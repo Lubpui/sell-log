@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Item } from "../types";
 
-const API_URL = "https://api.sheetbest.com/sheets/23e945ca-832b-4b78-9ca5-3b9f14b32e56";
+const API_URL = "https://api.sheetbest.com/sheets/786dddc5-a8bb-4c94-bfef-e7886afadd4a";
 
 const api = axios.create({
   baseURL: API_URL,
